@@ -1,8 +1,7 @@
 class Order
-  attr_reader :order, :menu
+  attr_reader :order
 
   def initialize(dish_class = Dish.new)
-    @menu = nil
     @order = []
     @dish_class = dish_class
   end
